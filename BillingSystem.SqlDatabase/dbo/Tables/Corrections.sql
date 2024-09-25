@@ -2,6 +2,7 @@
 (
 	[Id] INT IDENTITY(1,1) NOT NULL,
 	[Amount] FLOAT NOT NULL,
+	[DocumentNumber] Varchar(50),
 	[Reason] VARCHAR(50) NOT NULL,
 	[Describe] VARCHAR(100),
 	[InvoiceId] INT NOT NULL,
