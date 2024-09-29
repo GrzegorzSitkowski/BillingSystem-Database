@@ -67,5 +67,6 @@
     <Build Include="dbo\Tables\Readings.sql" />
     <Build Include="dbo\Tables\Invoices.sql" />
     <Build Include="dbo\Tables\Corrections.sql" />
+    <Build Include="dbo\Tables\InterestNotes.sql" />
   </ItemGroup>
 </Project>
