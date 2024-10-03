@@ -9,6 +9,7 @@
 	[CreateDate] DATETIMEOFFSET NOT NULL,
 	[CreatedBy] INT NOT NULL,
 	[DueDate] DATETIMEOFFSET NOT NULL,
+	[Paid] VARCHAR(5),
 	CONSTRAINT [PK_Invoices] PRIMARY KEY CLUSTERED ([Id] ASC),
 	CONSTRAINT [FK_Invoices_Customers] FOREIGN KEY ([CustomerId]) REFERENCES [dbo].[Customers] ([Id]) ON DELETE CASCADE,
 )
