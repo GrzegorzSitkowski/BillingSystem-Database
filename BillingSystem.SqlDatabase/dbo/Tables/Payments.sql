@@ -5,6 +5,7 @@
 	[DocumentId] INT NOT NULL,
 	[DocumentNumber] Varchar(50),
 	[Amount] FLOAT NOT NULL,
+	[InvoiceId] INT,
 	[CreateDate] DATETIMEOFFSET NOT NULL,
 	CONSTRAINT [Pk_Payments] PRIMARY KEY CLUSTERED ([Id] ASC),
 	CONSTRAINT [FK_Payments_Customers] FOREIGN KEY ([CustomerId]) REFERENCES [dbo].[Customers] ([Id]) ON DELETE CASCADE,
